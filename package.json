@@ -1,0 +1,31 @@
+{
+  "name": "mcp-upnote",
+  "version": "1.0.0",
+  "description": "Model Context Protocol과 UpNote 연동 도구",
+  "main": "index.js",
+  "bin": {
+    "mcp-upnote": "./bin/mcp-upnote.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mcp",
+    "upnote",
+    "ai",
+    "notes",
+    "productivity"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^10.0.0",
+    "conf": "^10.2.0",
+    "enquirer": "^2.3.6",
+    "open": "^8.4.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

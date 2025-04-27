@@ -1,0 +1,36 @@
+{
+  "version": "1.0",
+  "name": "upnote-mcp",
+  "description": "Model Context Protocol과 UpNote 연동 도구",
+  "github": {
+    "repository": "upnote-mcp",
+    "owner": "your-github-username",
+    "branch": "main"
+  },
+  "models": [
+    {
+      "name": "GPT-4",
+      "description": "OpenAI의 고급 대규모 언어 모델",
+      "parameters": {
+        "temperature": 0.7,
+        "max_tokens": 4096
+      }
+    },
+    {
+      "name": "Claude-3",
+      "description": "Anthropic의 최신 AI 모델",
+      "parameters": {
+        "temperature": 0.5,
+        "max_tokens": 8192
+      }
+    }
+  ],
+  "projects": [
+    {
+      "name": "upnote-mcp",
+      "description": "Model Context Protocol과 UpNote 연동 도구",
+      "model": "Claude-3",
+      "tags": ["MCP", "UpNote", "CLI", "npm"]
+    }
+  ]
+}
