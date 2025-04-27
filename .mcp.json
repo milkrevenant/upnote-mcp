@@ -4,7 +4,7 @@
   "description": "Model Context Protocol과 UpNote 연동 도구",
   "github": {
     "repository": "upnote-mcp",
-    "owner": "your-github-username",
+    "owner": "milkrevenant",
     "branch": "main"
   },
   "models": [
