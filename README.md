@@ -37,7 +37,7 @@ mcp-upnote init
 mcp-upnote note
 
 # 특정 프로젝트 및 모델로 노트 생성
-mcp-upnote note -p "자연어 처리 프로젝트" -m "GPT-4"
+mcp-upnote note -p "자연어 처리 프로젝트" -m "CustomModel"
 
 # 직접 내용 지정
 mcp-upnote note -t "노트 내용 텍스트" -n "노트북 이름"
@@ -73,8 +73,8 @@ mcp-upnote interactive
   "name": "Model Context Protocol Configuration",
   "models": [
     {
-      "name": "GPT-4",
-      "description": "OpenAI의 고급 대규모 언어 모델",
+      "name": "CustomModel",
+      "description": "사용자 정의 또는 오픈소스 AI 모델",
       "parameters": {
         "temperature": 0.7,
         "max_tokens": 4096
@@ -85,7 +85,7 @@ mcp-upnote interactive
     {
       "name": "자연어 처리 프로젝트",
       "description": "한국어 자연어 처리 능력 향상을 위한 프로젝트",
-      "model": "GPT-4",
+      "model": "CustomModel",
       "tags": ["NLP", "Korean", "MCP"]
     }
   ],
@@ -128,10 +128,3 @@ mcp-upnote interactive
 
 MIT
 
-## 기여하기
-
-1. 이 저장소를 포크합니다
-2. 기능 브랜치를 생성합니다 (`git checkout -b feature/amazing-feature`)
-3. 변경사항을 커밋합니다 (`git commit -m 'Add some amazing feature'`)
-4. 브랜치에 푸시합니다 (`git push origin feature/amazing-feature`)
-5. Pull Request를 제출합니다
