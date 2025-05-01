@@ -7,6 +7,7 @@
     "mcp-upnote": "./bin/mcp-upnote.js"
   },
   "scripts": {
+    "start": "node ./bin/mcp-upnote.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -35,5 +36,6 @@
   "bugs": {
     "url": "https://github.com/milkrevenant/upnote-mcp/issues"
   },
-  "homepage": "https://github.com/milkrevenant/upnote-mcp#readme"
+  "homepage": "https://github.com/milkrevenant/upnote-mcp#readme",
+  "private": true
 }
