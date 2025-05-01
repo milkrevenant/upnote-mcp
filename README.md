@@ -12,14 +12,27 @@ Model Context Protocol과 UpNote를 연동하는 CLI 도구입니다. AI 모델 
 
 ## 설치 방법
 
-글로벌 설치:
+npm에 게시하지 않고 직접 GitHub에서 클론하여 사용할 수 있습니다:
+
 ```bash
-npm install -g mcp-upnote
+# 저장소 클론
+git clone https://github.com/milkrevenant/upnote-mcp.git
+cd upnote-mcp
+
+# 의존성 설치
+npm install
+
+# 로컬에서 CLI 도구 링크
+npm link
 ```
 
-또는 npx로 직접 실행:
+`npm link` 명령어를 실행하면 시스템에 전역으로 `mcp-upnote` 명령어가 등록되어 어디서든 사용할 수 있습니다.
+
+또는 저장소 폴더에서 직접 실행할 수도 있습니다:
+
 ```bash
-npx mcp-upnote
+# 저장소 폴더에서 직접 실행
+node bin/mcp-upnote.js
 ```
 
 ## 사용 방법
@@ -119,10 +132,53 @@ mcp-upnote interactive
 - 노트북 생성 (`notebook`) 
 - 태그 보기 (`tag`)
 
+## MCP 설정 파일
+
+이 프로젝트는 MCP(Model Context Protocol) 설정 파일(`.mcp.json`)을 포함하고 있어 MCP 환경과 통합할 수 있습니다. MCP 설정 파일은 다음과 같은 구조로 되어 있습니다:
+
+```json
+{
+  "version": "1.0",
+  "name": "upnote-mcp",
+  "description": "Model Context Protocol과 UpNote 연동 도구",
+  "github": {
+    "repository": "upnote-mcp",
+    "owner": "milkrevenant",
+    "branch": "main"
+  },
+  "models": [...],
+  "projects": [...]
+}
+```
+
 ## 요구 사항
 
 - Node.js 14 이상
 - UpNote 앱
+
+## 개발 방법
+
+이 프로젝트를 확장하거나 수정하려면:
+
+```bash
+# 저장소 클론
+git clone https://github.com/milkrevenant/upnote-mcp.git
+cd upnote-mcp
+
+# 의존성 설치
+npm install
+
+# 개발용 링크 생성
+npm link
+
+# 코드 수정 후 테스트
+mcp-upnote
+```
+
+## 문제 해결
+
+- **UpNote 앱이 열리지 않는 경우**: UpNote 앱이 설치되어 있는지 확인하고, `x-callback-url` 프로토콜이 시스템에 등록되어 있는지 확인하세요.
+- **설정 파일 문제**: `~/.mcp-upnote` 디렉토리가 있는지 확인하고, 필요한 경우 `mcp-upnote init` 명령어로 설정을 초기화하세요.
 
 ## 라이선스
 
